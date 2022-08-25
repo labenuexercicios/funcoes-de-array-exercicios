@@ -4,3 +4,8 @@ const objeto = {
     username: "astrodev_labenu",
     senha: "melhorDeTodos"
 }
+function caixaAlta(objeto) {
+    let result = objeto;
+    return result;
+}
+console.log(objeto)
