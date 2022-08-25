@@ -11,3 +11,18 @@ const produtos = [
     { nome: "Sabão em Pó", categoria: "Limpeza", preco: 10.80 }
  ]
  
+ const Busca = (Busca) => {
+    let resul = []
+ 
+    for(let item in produtos) {
+        for(let index in produtos[item]) {
+            if (produtos[item][index] === Busca) {
+                resul.push(produtos[item])
+            }
+        }
+    }
+
+    return resul
+} 
+
+console.log(Busca("Limpeza"))
