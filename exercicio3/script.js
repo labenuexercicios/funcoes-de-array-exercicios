@@ -9,5 +9,11 @@ const produtos = [
     { nome: "Vinho Tinto", categoria: "Bebidas", preco: 55 },
     { nome: "Berinjela kg", categoria: "Hortifruti", preco: 8.99 },
     { nome: "Sabão em Pó", categoria: "Limpeza", preco: 10.80 }
- ]
- 
+]
+
+const filtraProdutos = produtos.filter((produtos) => {
+    if (produtos.categoria === "Limpeza") {
+        return produtos
+    }
+})
+console.log(filtraProdutos)
