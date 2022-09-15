@@ -10,4 +10,8 @@ const produtos = [
     { nome: "Berinjela kg", categoria: "Hortifruti", preco: 8.99 },
     { nome: "Sabão em Pó", categoria: "Limpeza", preco: 10.80 }
  ]
- 
+const nomesProdutos = []
+for (i in produtos){
+    nomesProdutos.push(produtos[i].categoria)
+}
+console.log(nomesProdutos)
