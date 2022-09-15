@@ -19,8 +19,8 @@ const func2 = (teste) => {
         arrayDoObjeto.push(objeto[propriedade])
     }
   return arrayDoObjeto.join()
-  }
-  console.log(func2(objeto))
+}
+console.log(func2(objeto))
 //-----------
 //exercicio 3
 const func3 = (func1, func2) => {
@@ -29,6 +29,6 @@ const func3 = (func1, func2) => {
     }
     let resultadoFinal = func2(func1)
     return resultadoFinal
-  }
+}
 
-  console.log(func3(func1, func2))
+console.log(func3(func1, func2)) 
