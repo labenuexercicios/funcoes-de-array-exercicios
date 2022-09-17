@@ -12,4 +12,3 @@ saída esperada:
 
 Chame a funcão 3, passando como argumentos o objeto passado no arquivo `script.js`, e a funcão 1.
 Repita o processo para a funcão 2
-
