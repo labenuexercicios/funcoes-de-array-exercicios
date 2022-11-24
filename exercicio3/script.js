@@ -1,3 +1,6 @@
+//==============================Exercício 3=============================
+//Dado um array de produtos, onde cada produto é um objeto com nome, preço e categoria, retorne um novo array com o nome dos produtos da categoria Limpeza.
+
 const produtos = [
     { nome: "Alface Lavada", categoria: "Hortifruti", preco: 2.5 },
     { nome: "Guaraná 2l", categoria: "Bebidas", preco: 7.8 },
@@ -9,5 +12,11 @@ const produtos = [
     { nome: "Vinho Tinto", categoria: "Bebidas", preco: 55 },
     { nome: "Berinjela kg", categoria: "Hortifruti", preco: 8.99 },
     { nome: "Sabão em Pó", categoria: "Limpeza", preco: 10.80 }
- ]
- 
+]
+
+const produtosLimpeza = produtos.filter((item, index, array) => {
+    return item.categoria === "Limpeza"
+    
+});
+console.log(produtosLimpeza);
+
