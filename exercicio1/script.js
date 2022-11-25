@@ -15,12 +15,23 @@ const objectCapsLock = (element) =>{
 }
 console.log(objectCapsLock(objeto))
 
+//MODO DIFERENTE DE FAZER
+const capsLock = (object) =>{
+    return object = {
+        nome: object.nome.toUpperCase(),
+        profissao: object.profissao.toUpperCase(),
+        username: object.username.toUpperCase(),
+        senha: object.senha.toUpperCase()
+    }
+}
+console.log(capsLock(objeto))
+
 //PARTE 2
 const runningText = (element) =>{
     let text = ""
 
     for (let i in element){
-        text = text + `${element[i]} `
+        text = text + `${element[i]}`
     }
 
     return text;
