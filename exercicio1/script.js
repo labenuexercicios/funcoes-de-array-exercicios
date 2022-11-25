@@ -23,17 +23,18 @@ const objeto = {
 //============================ PRIMEIRA FUNÇÃO =============================
 // Transformar todos os valores do objeto em caixa alta
 
-const funcaoCaixaAlta = (obj) => {
-    
-    for (index in obj) {
+const functionUpperCase = (obj) => {
+    newObject = { ...obj };
+
+    for (index in newObject) {
         
-        if (typeof obj[index] === "string") {
-            obj[index] = obj[index].toUpperCase()
+        if (typeof newObject[index] === "string") {
+            newObject[index] = newObject[index].toUpperCase()
         }
     }
-    return obj
+    return newObject
 };
-//console.log(funcaoCaixaAlta(objeto))
+//console.log(functionUpperCase(objeto))
 
 
 //========================= SEGUNDA FUNÇÃO =================================
@@ -47,17 +48,21 @@ const functionText = (obj) => {
     }
     return text
 }
-//console.log(functionText(objeto))
+console.log(functionText(objeto))
 
 
 //========================= TERCEIRA FUNÇÃO ================================
 //Criar um função que recebe um objeto e um callback. A função deve passar o objeto como argumento da callback.
 
-const imprimirValor = (obj, functionCallBack) => {
-    return functionCallBack(obj);
-}
-console.log(imprimirValor(objeto, funcaoCaixaAlta))
-console.log(imprimirValor(objeto, functionText))
+const printValues = (obj, functionCallBack) => {
+    console.log(functionCallBack(obj));
+};
+
+console.log(`------- FUNCTION CHANGE TEXT UPPERCASE --------`);
+printValues(objeto, functionUpperCase);
+
+console.log(`\n------------ FUNCTION SINGLE TEXT ----------`)
+printValues(objeto, functionText);
 
 
 

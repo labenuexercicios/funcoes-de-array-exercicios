@@ -18,5 +18,103 @@ const produtosLimpeza = produtos.filter((item, index, array) => {
     return item.categoria === "Limpeza"
     
 });
+
+console.log(`\n---------- ONLY CLEAR PRODUCTS -------------`)
 console.log(produtosLimpeza);
 
+
+console.log(`\n---------- ONLY PRODUCTS VALUES > R$ 7.00 -------------`)
+const productsValues = produtos.filter((item) => {
+    return item.preco > 7.00
+})
+console.log(productsValues);
+
+
+console.log(`\n---------- ONLY THIS NAMES -------------`)
+const productsNames = produtos.map((item) => {
+    return item.nome
+});
+console.log(productsNames);
+
+
+console.log(`\n---------- ONLY PRODUCTS VALUES < R$ 7.00 ----------`)
+const productsValues2 = produtos.filter((item) => item.preco < 7)
+
+console.log(productsValues2);
+
+
+console.log(`\n---------- ONLY THIS NAMES AND VALUES ----------`)
+const namesAndValues = produtos.map((item) => {
+    return (`name: ${item.nome} - values: R$${item.preco}`)
+});
+console.log(namesAndValues);
+
+
+//===========================================================================
+
+const mostrarIdade = (idade) => {
+    console.log("Sua idade é", idade)
+}
+
+const calcularIdade = (anoAtual, AnoNascimento, callback) => {
+    idade = anoAtual - AnoNascimento;
+    callback(idade)
+}
+
+calcularIdade(2022, 1985, mostrarIdade)
+
+
+//===========================================================================
+
+/* const mostrarJogador = (jogador) => {
+    console.log(`O melhor jogador da seleção é ${jogador}`)
+}
+
+/* const mostrarCallBackJogador = (name, callback) => {
+    const result = name
+    callback(result)
+} */
+
+/* const mostrarCallBackJogador = (callback) => {
+    name = prompt('Qual o melhor jogador da seleção?')
+    callback(name)
+}
+
+mostrarCallBackJogador(mostrarJogador); */
+
+
+//===========================================================================
+
+/* const cantor = (name) => {
+    console.log(`O cantor do momento pra você é: ${name}`)
+}
+
+const mostrarCantor = (callback) => {
+    name = prompt('Qual seu cantor favorito?')
+    callback(name)
+}
+
+mostrarCantor(cantor); */
+
+
+// ==========================================================================
+
+/* const verificarAtividade = (hora) => {
+    
+    if (hora === 7) {
+        return "Agora é hora de Trabalhar!"
+    } else if (hora === 12) {
+        return "Agora é hora de Almoçar!"
+    } else if (hora === 23) {
+        return "Agora é hora de Dormir!"
+    } else {
+        return "Agora é hora de Estudar!"
+    };
+};
+
+
+const imprimirAtividade = (callback) => {
+    hora = Number(prompt('Que horas são?'));
+    return callback(hora)
+};
+console.log(imprimirAtividade(verificarAtividade)); */

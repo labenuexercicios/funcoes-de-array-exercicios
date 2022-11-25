@@ -10,10 +10,14 @@ const multiplicar = arrayNum.map((element) => {
     const triplos = element * 3
     return triplos
 })
+
+console.log(`---------- MULTIPLY ARRAY FOR 3 -------------`)
 console.log(multiplicar)
 
 const dividir = arrayNum.map((element) => {
     const metades = element / 2
     return metades.toFixed(2)
 })
+
+console.log(`\n---------- DIVISION ARRAY FOR 2 -------------`)
 console.log(dividir)
