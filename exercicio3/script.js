@@ -11,3 +11,33 @@ const produtos = [
     { nome: "Sabão em Pó", categoria: "Limpeza", preco: 10.80 }
  ]
  
+
+ const novaFuncao = produtos.filter((elementos) =>
+    elementos.categoria ==="Limpeza")
+
+    console.log(novaFuncao)
+
+    //EXTRA 
+    const produtosMaiores = produtos.filter((elementos)=>elementos.preco >7.00)
+ 
+    console.log(produtosMaiores)
+
+    const produtosBaixo = produtos.filter((elementos)=>elementos.preco < 7.00)
+    console.log(produtosBaixo)
+
+    const produtosNomes = produtos.map((elementos)=> `O produto é ${elementos.nome}, e custa ${elementos.preco}`)
+    console.log(produtosNomes)
+
+
+//Vamos somar o valor total os produtos no array acima.
+// Crie uma variavel precoTotal e atribua 0 a ela.
+// Utilize o for of para percorrer todos os produtos
+// dentro do escopo do for faça a soma para saber o valor total dos produtos
+
+
+let i = 0
+for (let i of produtos){
+     i=i+produtos.preco
+
+}    
+ console.log(`o preco total ficou ${i}`)
