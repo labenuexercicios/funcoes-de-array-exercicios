@@ -11,3 +11,8 @@ const produtos = [
     { nome: "Sabão em Pó", categoria: "Limpeza", preco: 10.80 }
  ]
  
+const novoarraynomelimpeza = produtos.filter((nome) =>{//cria 1 novo array pra procura os itens no array "produtos" usando .filter
+    return nome.categoria === "Limpeza"//procura so a categoria de limpeza
+})
+
+console.log(novoarraynomelimpeza)
