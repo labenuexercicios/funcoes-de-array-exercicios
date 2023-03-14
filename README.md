@@ -1,4 +1,4 @@
-#A018 - Funcões de Array
+#Funcões de Array
 
 ### Setup do projeto no Git
 
