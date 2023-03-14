@@ -1,6 +1,6 @@
 # Exercício 2
 Crie um array de números que contenha 8 números.
-Depois disso, utilize este array para criar duas funcões de array `map()`:
+Com este array e utilizando o `map()`, retorne os arrays abaixo:
 
-1. A primeira deve retornar um novo array contendo os números múltiplicados por 3, Crie uma `const triplos`, e guarde o valor do array nesta const;
-2. A segunda deve retornar um novo array contendo os números divididos por 2. Crie uma `const metades`, e guarde o valor do array nesta const;
+1. Retorne um novo array contendo os números multiplicados por 5. Guarde esse array dentro de uma variável `const quintuplos`.
+2. Retorne um novo array contendo os números divididos por 2. Guarde esse array dentro de uma variável `const metades`.

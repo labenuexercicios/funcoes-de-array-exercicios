@@ -2,7 +2,8 @@
 
 Crie duas funcões que recebem como parâmetro um objeto (o objeto está pronto no arquivo JS).
 1. A primeira deve retornar o objeto, alterando as propriedades dele para que os **valores** deste objeto fiquem em CAIXA ALTA.
-saída esperada:
+
+Saída esperada:
 
 `{ nome: 'ASTRODEV', profissao: 'DEV DAS ESTRELAS', username: 'ASTRODEV_LABENU', senha: 'MELHORDETODOS'}`
 
