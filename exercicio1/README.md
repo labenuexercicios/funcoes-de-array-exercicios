@@ -12,9 +12,9 @@ Crie duas funcões que recebem como parâmetro um objeto.
 
     Saída esperada:
 
-    `O nome é Astrodev, a profissão é Dev das estrelas, o username é astrodev_labenu e a senha é melhorDeTodos.`
+    `O valor da propriedade ${propriedade} é ${valor}.`
 
 3. Agora, crie uma funcão que recebe um objeto e uma callback como parâmetros. A funcão principal deve passar o objeto como argumento da funcão de callback, e em seguida imprimir o valor retornado.
 
-    Chame a funcão 3, passando como argumentos o objeto disponibilizado no arquivo `script.js`, e a função 1.
+    Chame a funcão 3, passando como argumentos o **objeto disponibilizado** no arquivo `script.js`, e a função 1.
     Repita o processo para a funcão 2.
