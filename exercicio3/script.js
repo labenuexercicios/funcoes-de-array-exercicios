@@ -10,4 +10,16 @@ const produtos = [
     { nome: "Berinjela kg", categoria: "Hortifruti", preco: 8.99 },
     { nome: "Sabão em Pó", categoria: "Limpeza", preco: 10.80 }
  ]
+
+
+ const produtosDeLimpeza = produtos.filter((produtos, indice, arrayOriginal) => {
+    return produtos.categoria === 'Limpeza'
+})
+
+const arrayDeNomes = produtosDeLimpeza.map((produtos) => {
+  return produtos.nome
+}) 
+
+console.log(arrayDeNomes)
+console.log(produtosDeLimpeza)
  
