@@ -10,4 +10,17 @@ const produtos = [
     { nome: "Berinjela kg", categoria: "Hortifruti", preco: 8.99 },
     { nome: "Sabão em Pó", categoria: "Limpeza", preco: 10.80 }
  ]
- 
+
+ const limpezinha = produtos.filter((limpo)=>{
+   const produtosLimpeza = limpo.categoria==="Limpeza";
+   return produtosLimpeza;
+ });
+console.log(limpezinha)
+
+const retornaNomes = limpezinha.map((nomes)=>{
+   const nomesProdutos = nomes.nome;
+   return nomesProdutos;
+})
+console.log(retornaNomes)
+
+//Finalizado
