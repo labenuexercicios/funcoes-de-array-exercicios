@@ -1,3 +1,5 @@
 # Exercício 3
 
-Dado um array de produtos, onde cada produto é um objeto com nome, preço e categoria, retorne um novo array com o nome dos produtos da categoria Limpeza.
+Utilizando o array **produtos** disponibilizado, retorne um novo array com os **nomes** dos produtos da categoria **limpeza**.
+
+Observe que cada elemento do array **produtos** é um objeto com as propriedades *nome*, *preco* e *categoria*.
