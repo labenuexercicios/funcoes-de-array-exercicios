@@ -11,3 +11,14 @@ const produtos = [
     { nome: "Sabão em Pó", categoria: "Limpeza", preco: 10.80 }
  ]
  
+ const novoArray = produtos.filter((produtos) => {
+    if ( produtos.categoria === "Limpeza"){
+        return true
+    }
+
+   
+ }).map((produto) => {
+   return produto.nome
+ })
+
+ console.log(novoArray)
