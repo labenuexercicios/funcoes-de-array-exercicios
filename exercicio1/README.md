@@ -1,4 +1,4 @@
-# Exercício 2
+# Exercício 1
 Crie um array de números que contenha 8 números.
 Com este array e utilizando o `map()`, retorne os arrays abaixo:
 
