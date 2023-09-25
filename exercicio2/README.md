@@ -1,4 +1,4 @@
-# Exercício 3
+# Exercício 2
 
 Utilizando o array **produtos** disponibilizado, retorne um novo array com os **nomes** dos produtos da categoria **limpeza**.
 
