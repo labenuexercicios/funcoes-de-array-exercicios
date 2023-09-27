@@ -4,3 +4,12 @@ const infosPessoa = {
     username: "astrodev_labenu",
     senha: "melhorDeTodos"
 }
+//
+
+//
+const funcaoCallback = (objeto, callback) => {
+    console.log(objeto , callback(objeto))
+
+}
+
+funcaoCallback(infosPessoa, retornaTexto)
